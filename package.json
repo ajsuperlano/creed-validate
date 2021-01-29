@@ -1,0 +1,25 @@
+{
+  "name": "creed-validate",
+  "version": "1.0.0",
+  "description": "validate form, plugin jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajsuperlano/creed-validate.git"
+  },
+  "keywords": [
+    "validate",
+    "jquery",
+    "form",
+    "plugin"
+  ],
+  "author": "Antonio Superlano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajsuperlano/creed-validate/issues"
+  },
+  "homepage": "https://github.com/ajsuperlano/creed-validate#readme"
+}
