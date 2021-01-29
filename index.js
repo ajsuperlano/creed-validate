@@ -98,7 +98,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
@@ -118,7 +118,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
@@ -139,7 +139,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
@@ -158,7 +158,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
@@ -177,7 +177,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
@@ -196,7 +196,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
@@ -215,7 +215,7 @@ $.fn.creedValidateCheck = function() {
 		tecla_especial = !1;    
 		for(var i in especiales) {
 			if(key == especiales[i]) {
-				if(charKey==0){
+				if(tecla==0){
 					tecla_especial = true;
 					break;    
 				}
