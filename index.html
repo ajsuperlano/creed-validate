@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creed-validate</title>
+
+<style type="text/css">
+	
+	form {
+		align-content: center;
+	}
+
+</style>
+</head>
+<body>
+
+
+		<form  id="form" >
+				<label for="id1">solo letras</label>
+			<input type="text"  validate="1|L|5:20" id="id1" name="name1">
+				<label for="id2">solo nuemros</label>
+			<input type="text"  validate="1|N|5:20" id="id2" name="name2">
+				<label for="id3">letras, numeros y espacios</label>
+			<input type="text"  validate="1|LNE|5:20" id="id3" name="name3">
+			<label for="select1"> requerido</label>
+			<select validate="1|l" id="select1">
+				<option   value="">Seleccione</option>
+				<option value="valor1">valor1</option>
+				<option value="valor2">valor2</option>
+				<option value="valor3">valor3</option>
+			</select>
+
+			<button type="submit">Enviar form</button>
+		</form>
+
+</body>
+<!-- Latest compiled and minified CSS & JS -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="index.js" >
+	
+
+</script>
+<script type="text/javascript">
+	/**
+	* funciones que empisan con valida mas una terminacion 
+	* [valida  funciones para validate la escritura en campos, campo de texto, input o textarea]
+	* @param  {[type]} e       [tecla pulsada, e.keyCode || e.which, compatible entre navegadores]
+	* @var    {[string]} tecla [tecla pulsada convertida en minuscula para la combrobacion]
+	* @var    {[string]} caracter [valores a comprobar en la validacion]
+	* teminaciones 
+	* L: solo letras lentras 
+	* LE: letras y espacio
+	* N: Solo numeros
+	* NE: numeros y espacio
+	* LN: letras y numeros
+	* LNE: Letras, numeros y espacio
+	* LNEC: Letras, numeros. espacio Caracteres especiales : ,.;:¡!¿?#$%&()"
+	*/
+console.log($("#form").creedValidate());
+$('#form').submit( function(e) {
+	e.preventDefault();
+	if ($("#form").creedValidateCheck()) {
+		alert("todos validos")
+	};
+
+});
+
+</script>
+</html>
