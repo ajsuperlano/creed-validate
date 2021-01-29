@@ -23,7 +23,7 @@ Uso: El uso del plugin se usa pasando el id del formulario a validate
  	if (validate = this.getAttribute("validate")) {
  		validate = validate.split("|");
  		/*console.log( $(this).siblings('label'));*/
- 		if (validate[0] == 1) {$('label[for="'+this.id+'"]').append(' <i class="fa fa-asterisk text-danger required"  title="requerido"></i>') };
+ 		if (validate[0] == 1) {$('label[for="'+this.id+'"]').append(' <i style="color:red" title="requerido">*</i> ') };
 
  		if(validate[1] == "L")             { this.onkeypress = function(event) {return validaL(event,this);    } }
  		else if(validate[1] == "N")        { this.onkeypress = function(event) {return validaN(event,this);    } }
@@ -68,7 +68,7 @@ $.fn.creedValidateCheck = function() {
 
  });
  if (invalido > 0) { 
- 	$('#creedValidateText').css({display: "block", "text-align": "center", color: "red"}).html('Por favor complete los campos Obligatorios, resaltados con <i class="fa fa-asterisk text-danger"></i>');
+ 	$('#creedValidateText').css({display: "block", "text-align": "center", color: "red"}).html('Por favor complete los campos Obligatorios, resaltados con "*" </i>');
  	return 0 ;
  }else {
  	$('#creedValidateText').css({display: "", "text-align": "", color: ""}).html('');
